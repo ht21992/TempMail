@@ -1,0 +1,23 @@
+.copy-button {
+    background-color: #4a6bff;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+
+  .copy-button:hover {
+    background-color: #3a5bef;
+  }
+
+  .copy-button.copied {
+    background-color: #4caf50;
+    animation: fadeIn 0.3s ease;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
