@@ -2,10 +2,10 @@ import smtplib
 from email.mime.text import MIMEText
 
 sender = "test@example.com"
-receiver = "wawmun6djf@ymkap.com"
+receiver = "kio7abx9w9@ebscw.com"
 
 msg = MIMEText("This is a test email body.")
-msg["Subject"] = "Test Email"
+msg["Subject"] = "New Email"
 msg["From"] = sender
 msg["To"] = receiver
 

@@ -28,3 +28,11 @@ class TempEmailViewSet(viewsets.ModelViewSet):
         messages = EmailMessage.objects.filter(temp_mail=temp_email)
         serializer = EmailMessageSerializer(messages, many=True)
         return Response(serializer.data)
+
+    @action(detail=True, methods=["post"])
+    def mark_read(self, request, pk=None):
+        if not pk:
+            return Response({"error": "removed or wrong message id"}, status=401)
+        message = EmailMessage.objects.filter(id=pk)
+        message.update(read=True)
+        return Response({"msg": "message marked as read"}, status=200)

@@ -1,0 +1,13 @@
+.statsSection {
+    padding: 1rem 2rem;
+    /* background-color: #ffffff; */
+    border-bottom: 1px solid #eaeaea;
+  }
+
+  .cardsContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 1.5rem;
+  }

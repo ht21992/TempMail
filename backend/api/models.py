@@ -12,4 +12,5 @@ class EmailMessage(models.Model):
     sender = models.CharField(max_length=255)
     subject = models.CharField(max_length=255)
     body = models.TextField()
+    read = models.BooleanField(default=False)
     received_at = models.DateTimeField(auto_now_add=True)
