@@ -35,6 +35,7 @@ pip install -r requirements.txt
 
 ```bash
 cd backend
+python manage.py migrate
 python manage.py runserver
 ```
 
