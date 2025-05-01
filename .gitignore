@@ -1,8 +1,7 @@
 # Ignore Django related files and folders
 *.pyc
 __pycache__/
-db.sqlite3
-db_copy.sqlite3
+*.sqlite3
 *.pyo
 *.pyc
 *.pyd

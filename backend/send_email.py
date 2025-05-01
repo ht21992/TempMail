@@ -2,7 +2,7 @@ import smtplib
 from email.mime.text import MIMEText
 
 sender = "test@example.com"
-receiver = "kio7abx9w9@ebscw.com"
+receiver = "uld3y0p7i0@crvpe.com"  # Add your temp mail
 
 msg = MIMEText("This is a test email body.")
 msg["Subject"] = "New Email"
